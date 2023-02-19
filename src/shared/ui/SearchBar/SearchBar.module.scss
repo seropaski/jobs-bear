@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  padding: 16px 23px;
+  max-width: 652px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+
+  > * + * {
+    margin-left: 16px;
+  }
+}
+
+.divider {
+  background-color: var(--gray-light);
+  width: 1px;
+  height: 29px;
+}
+
+.input {
+  appearance: none;
+  border: none;
+  outline: none;
+  flex: 1;
+  line-height: 20px;
+
+  &::placeholder {
+    color: var(--gray);
+  }
+
+  &:first-of-type {
+    flex: 1.25;
+  }
+}
